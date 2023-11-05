@@ -59,7 +59,7 @@ export function ContentAnimated( props: MenuProps ) {
             </div>
             <footer className={styles.footer}>
               <div className={styles.footerLeft}>
-                © arqex <span id="year"></span>
+                © arqex <span id="year">{ (new Date()).getFullYear() }</span>
                 <script>document.querySelector('#year').innerHTML = (new Date()).getFullYear()</script>
               </div>
               <div className={styles.footerRight}>

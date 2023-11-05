@@ -203,6 +203,12 @@ code {
   margin-bottom: 8px;
 }
 
+.aboutContent {
+  max-width: 510px;
+  margin: 10px auto;
+  padding-bottom: 60px;
+}
+
 
 @media screen and (max-width: 600px) {
   .cvDesc {

@@ -15,6 +15,9 @@
 .content {
   flex-grow: 1;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer {

@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.imageWrapper {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  color: #344;
+}

@@ -117,7 +117,7 @@ export function Menu( props: MenuProps ){
                 <li className={styles.item}><Link to="/articles">Articles</Link></li>
                 <li className={styles.item}><a href="/projects">Projects</a></li>
                 <li className={styles.item}><a href="/cv">CV</a></li>
-                <li className={styles.item}><a href="">About me</a></li>
+                <li className={styles.item}><a href="/about">About me</a></li>
               </ul>
             </nav>
           <div className={styles.dragBar} />

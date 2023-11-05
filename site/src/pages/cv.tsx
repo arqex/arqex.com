@@ -24,7 +24,7 @@ export default function CvPage(props: PageProps<any>) {
               <h3>Location</h3>
               <ul className={styles.cvList}>
                 <li>
-                  I live in the beautiful city of <a href="https://www.google.com/maps/place/Barcelona/@41.3926606,2.0989899,13z/data=!3m1!4b1!4m6!3m5!1s0x12a49816718e30e5:0x44b0fb3d4f47660a!8m2!3d41.3873974!4d2.168568!16zL20vMDFmNjI?entry=ttu" target="_blank">Barcelona, Spain.</a>. 
+                  I live in the beautiful city of <a href="https://www.google.com/maps/place/Barcelona/@41.3926606,2.0989899,13z/data=!3m1!4b1!4m6!3m5!1s0x12a49816718e30e5:0x44b0fb3d4f47660a!8m2!3d41.3873974!4d2.168568!16zL20vMDFmNjI?entry=ttu" target="_blank">Barcelona, Spain</a>. 
                 </li>
               </ul>
             </div>
