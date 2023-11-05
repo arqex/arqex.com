@@ -1,0 +1,41 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  font-family: "Joan", serif;
+  font-size: 19px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+  font-family: "Bellefair", serif;
+  margin: 0 0;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+a {
+  color: #535eac
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 17px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+}

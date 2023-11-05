@@ -1,0 +1,175 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: 4;
+}
+
+.bar {
+  background-color: #B4C5BE;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.toggleWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: stretch;
+  justify-content: center;
+  width: 50%;
+}
+
+.name {
+  font-family: "Bellefair", serif;
+  font-size: 23px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.job {
+  font-family: "Bellefair", serif;
+  font-size: 12px;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-top: 2px;
+}
+
+.toggle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 19px;
+  border: 0;
+  padding: 4px 0 2px 20px;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+}
+
+.toggle:hover, .titleLink:hover {
+  background-color: rgba(0,0,0,.1);
+}
+
+.toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px #535eac inset;
+}
+
+.titleLink {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  padding: 4px 20px 0 0;
+  height: 50px;
+}
+
+
+.triangle {
+  font-size: 16px;
+  transform: translateY(-2px);
+  display: inline-block;
+  color: rgba(0,0,0,.4);
+}
+
+
+.menu {
+  background-color: #B4C5BE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1000px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  z-index: -1;
+}
+
+.itemListContainer {
+  max-width: 320px;
+  width: 100%;
+}
+
+.itemList {
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.item {
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  text-decoration: none;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  color: #000;
+  font-size: 19px;
+}
+
+.item a:hover {
+  background-color: rgba(0,0,0,.1);
+}
+
+.item a:focus-visible {
+  outline: none;
+  box-shadow:  0 0 0 3px #535eac;
+}
+
+.dragBar {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.1);
+  margin: 10px 0;
+  max-width: 320px;
+  margin-left: 12px;
+  cursor: grab;
+}
+
+.dragBar:active {
+  cursor: grabbing;
+}
+
+.dragging {
+  cursor: grabbing;
+}
+
+.dragging a {
+  pointer-events: none;
+}
+
+.bubble {
+  position: fixed;
+  top: 80px;
+  left: calc( 50% - 60px) ;
+  z-index: 14;
+  width: 50px;
+  pointer-events: none;
+}

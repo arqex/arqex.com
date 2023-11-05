@@ -1,0 +1,21 @@
+.button {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #707DC8;
+  border: 0;
+  border-radius: 4px;
+  border-bottom: 2px solid rgba(0,0,0,.2);
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #535eac;
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px #a4dac3;;
+}

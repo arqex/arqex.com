@@ -1,0 +1,35 @@
+.container {
+  font-family: 'Neucha', cursive;
+  font-size: 20px;
+  background-color: #fff3db;
+  padding: 20px;
+  border-radius: 30% 70% 43% 57% / 39% 47% 53% 61% ;
+  position:absolute;
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: 4px 4px rgba(0,0,0,.1);
+}
+
+.container:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #fff3db;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff3db;
+  border-bottom: 20px solid transparent;
+  left: 9px;
+  bottom: -16px;
+  transform: rotate(40deg);
+}
+
+
+.menuBubble {
+  width: 140px;
+}
+
+.menuBubble:before {
+  left: 49px;
+  top: -5px;
+  bottom: initial;
+}

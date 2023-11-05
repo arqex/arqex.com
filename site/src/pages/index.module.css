@@ -1,0 +1,211 @@
+.container {
+  margin: auto;
+  max-width: 550px;
+  padding: 0 20px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+.buttonWrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contentHeader {
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+  max-width: 760px;
+}
+
+
+
+.articleHeader {
+  max-width: 720px;
+  padding-top: 80px;
+}
+
+.articleType {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.articleType a {
+  text-decoration: none;
+}
+
+.articleType a:hover {
+  text-decoration: underline;
+}
+
+.headerTitle {
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.articleContent {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.articleContent li {
+  margin-bottom: 10px;
+}
+
+.articleContent img {
+  max-width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.articleContent h3 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+code {
+  display: inline-block;
+  font-size: 16px;
+  padding: 0 2px;
+  background-color: #edf0ef;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.articleContent pre {
+  font-size: 14px;
+  font-family: 'JetBrains Mono', monospace;
+  width: 100%;
+  overflow: auto;
+  background-color: #edf0ef;
+  padding: 10px;
+  tab-size: 2;
+}
+
+.externalLink {
+  font-size: 20px;
+}
+
+.contentBody {
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 0 20px;
+}
+
+
+.articleItem {
+  margin: 30px 0;
+}
+
+.articleTitle {
+
+}
+
+.articleMeta {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  margin: 4px 0 8px 2px;
+  color: #66716d;
+}
+
+.articleTitle a {
+  text-decoration: none;
+}
+
+.articleTitle a:hover {
+  text-decoration: underline;
+}
+
+.articleTitle a:hover .externalLink {
+  text-decoration: none;
+}
+
+.cvList {
+  list-style: none;
+  margin: 10px 0 40px;
+  line-height: 1.3em;
+}
+
+.cvList li {
+  margin-bottom: 16px;
+}
+
+.date {
+  font-size: 0.95em;
+  color: #245b47;
+}
+
+.cvWork li {
+  margin-bottom: 24px;
+}
+
+.cvWork .date {
+  margin-bottom: 4px;
+}
+
+.cvTitle {
+  margin-bottom: 4px;
+  line-height: 1.2em;
+}
+
+.cvDesc {
+  font-size: 0.9em;
+  color: #333;
+}
+
+.lang {
+  font-weight: 800;
+  color: #245b47;
+}
+
+.flag {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 2px;
+  transform: translate(0,1px)
+}
+
+.flag svg {
+  height: 18px;
+  position: absolute;
+  left: -2px; top: -1px;
+}
+
+.flag.en svg {
+  left: -10px;
+}
+
+.cvMore {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.cvMore li:before {
+  content: "○";
+  color: #245b47; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}
+
+.cvMore li {
+  margin-bottom: 8px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .cvDesc {
+    font-size: 16px;
+  }
+}

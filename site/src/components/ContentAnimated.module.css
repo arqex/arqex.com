@@ -1,0 +1,47 @@
+.blackbg {
+  background-color: #000;
+  min-height: 100vh;
+}
+
+.whitebg {
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: auto;
+}
+
+.content {
+  flex-grow: 1;
+  margin-top: 60px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #35384b;
+  color: #fff;
+  flex-shrink: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.footerRight {
+  display: flex;
+}
+
+.socialLink {
+  display: block;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.socialLink:hover {
+  background-color: rgba(255,255,255,.1);
+}
