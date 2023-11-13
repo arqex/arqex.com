@@ -1,5 +1,10 @@
 .container {
   position: relative;
+  opacity: .01;
+}
+
+.visible {
+  opacity: 1;
 }
 
 .content {

@@ -36,11 +36,15 @@ const ScreenWrapper: FunctionComponent<ScreenWrapperProps> = (props) => {
     menuControls.start(state);
   }
 
+  // Initial visibility
+  const [isVisible, setVisibility] = useState(false);
+
   React.useEffect(() => {
     function handleResize() {
       setWindowSize( getWindowSize() );
     }
     window.addEventListener('resize', handleResize);
+    setVisibility(true);
     return () => window.removeEventListener('resize', handleResize);
   });
 
@@ -89,8 +93,10 @@ const ScreenWrapper: FunctionComponent<ScreenWrapperProps> = (props) => {
     }
   }
 
+  const classNames = [styles.container, isVisible ? styles.visible : ""];
+
   return (
-    <div className={styles.container}>
+    <div className={classNames.join(' ')}>
       <FloatingJavi
         yValue={yvalue}
         snapPoints={snapPoints}
