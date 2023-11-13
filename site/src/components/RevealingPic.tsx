@@ -1,5 +1,5 @@
 
-import * as React from 'React';
+import * as React from 'react';
 import * as styles from './RevealingPic.module.css';
 import { createPortal } from 'react-dom';
 
@@ -148,7 +148,6 @@ class RevealedPic extends React.Component<RevealedPicProps> {
   getExpandedScale( closedScale: number ) {
     const {width, height} = this.props.position;
     const {innerWidth, innerHeight} = window;
-    console.log( width, height, innerWidth, innerHeight);
     if( innerWidth - width > innerHeight - height ) {
       return Math.min( 1, innerHeight * closedScale / height );
     }

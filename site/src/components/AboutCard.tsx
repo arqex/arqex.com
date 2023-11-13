@@ -1,4 +1,4 @@
-import * as React from 'React';
+import * as React from 'react';
 import * as styles from './AboutCard.module.css';
 import RevealingPic from './RevealingPic';
 
