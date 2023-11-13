@@ -1,5 +1,5 @@
 {
-  "name": "site",
+  "name": "arqex.com",
   "version": "1.0.0",
   "private": true,
   "description": "site",
@@ -27,8 +27,8 @@
     "gatsby-plugin-react-helmet": "^5.15.0",
     "gatsby-source-filesystem": "^4.15.0",
     "gatsby-transformer-remark": "^5.15.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
