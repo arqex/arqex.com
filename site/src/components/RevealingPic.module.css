@@ -2,6 +2,7 @@
   overflow: hidden;
   border-radius: 50%;
   border: 4px solid #B4C5BE;
+  cursor: pointer;
 }
 
 .overlay {

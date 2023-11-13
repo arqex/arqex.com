@@ -8,7 +8,6 @@ import { Link } from "gatsby";
 export default function Template(props: any) {
   const { markdownRemark } = props.data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
-  console.log( markdownRemark );
 
   useEffect( () => {
     setTimeout( () => {
@@ -40,7 +39,7 @@ export default function Template(props: any) {
                 )}
                 <h2 className={styles.articleTitle}>{frontmatter.title}</h2>
                 <div className={styles.articleMeta}>
-                  Published {frontmatter.date.toLocaleLowerCase()}
+                  Published {frontmatter.date?.toLocaleLowerCase()}
               </div>
               </div>
             </div>

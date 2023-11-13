@@ -1,5 +1,5 @@
-import React, { FunctionComponent, useState, useEffect } from 'react'
-import { motion, useAnimation, useMotionValue, useTransform } from "framer-motion"
+import React, { FunctionComponent, useState } from 'react'
+import { useAnimation, useMotionValue } from "framer-motion"
 import * as styles from './ScreenWrapper.module.css';
 import "../global.css";
 import Hyperspace from './Hyperspace';
@@ -121,6 +121,15 @@ export default ScreenWrapper;
 
 
 function getWindowSize() {
+  if( typeof window === 'undefined' ) {
+    // @ts-ignore
+    global.window = {
+      innerHeight: 0,
+      innerWidth: 0
+    }
+    return {width: 0, height: 0};
+  }
+  
   return {
     width: window.innerWidth,
     height: window.innerHeight

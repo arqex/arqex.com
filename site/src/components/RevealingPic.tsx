@@ -36,7 +36,7 @@ export default class RevealingPic extends React.Component<RevealPicProps, Reveal
 
     return (
       <div className={styles.container} style={dimensions}>
-        <a href="#" onClick={ this._open }>
+        <a onClick={ this._open }>
           <img ref={this.closedImageRef}
             src={imageURL}
             className={styles.image}
@@ -97,6 +97,7 @@ class RevealedPic extends React.Component<RevealedPicProps> {
 
     const imageStyle = isExpanded ? {
       boxShadow: 'rgba(0, 0, 0, 0.3) 0px 0px 40px 0px',
+      transform: `scale(${this.getExpandedScale(scale)})`,
       clipPath: `circle(200% at ${crop?.x}px ${crop?.y}px)`
     } : {
       width: position.width / scale,
@@ -117,9 +118,9 @@ class RevealedPic extends React.Component<RevealedPicProps> {
     }
 
     return (
-      <div className={styles.overlay}>
+      <div className={styles.overlay} onClick={ this._toggleExpand }>
         <div className={bgClasses} />
-        <img onClick={ this._toggleExpand }
+        <img 
           src={imageURL}
           className={styles.revealedPic}
           style={imageStyle} />
@@ -142,6 +143,16 @@ class RevealedPic extends React.Component<RevealedPicProps> {
         this.props.onClose();
       }
     }, 420);
+  }
+
+  getExpandedScale( closedScale: number ) {
+    const {width, height} = this.props.position;
+    const {innerWidth, innerHeight} = window;
+    console.log( width, height, innerWidth, innerHeight);
+    if( innerWidth - width > innerHeight - height ) {
+      return Math.min( 1, innerHeight * closedScale / height );
+    }
+    return Math.min( 1, innerWidth * closedScale / width );
   }
 
   componentDidMount = () => {

@@ -29,7 +29,6 @@ type DataProps = {
 
 export default function ProjectTemplate(props: PageProps<DataProps>) {
   const { allMarkdownRemark } = props.data // data.markdownRemark holds your post data
-  console.log( allMarkdownRemark )
   return (
     <ScreenWrapper>
       { (setMenuState: Function) => (
