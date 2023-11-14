@@ -60,7 +60,6 @@ export function ContentAnimated( props: MenuProps ) {
             <footer className={styles.footer}>
               <div className={styles.footerLeft}>
                 © arqex <span id="year">{ (new Date()).getFullYear() }</span>
-                <script>document.querySelector('#year').innerHTML = (new Date()).getFullYear()</script>
               </div>
               <div className={styles.footerRight}>
                 <a className={styles.socialLink} target="_blank" href='https://github.com/arqex' title="Check arqex open-source projects on Github">

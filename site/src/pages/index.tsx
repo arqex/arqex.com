@@ -12,6 +12,7 @@ class IndexPage extends React.Component {
         { (setMenuState: Function) => (
           <>
             <Helmet>
+              <title>Javier Márquez - Sofware Developer - arqex.com</title>
               <link rel="preconnect" href="https://fonts.googleapis.com" />
               <link rel="preconnect" href="https://fonts.gstatic.com" />
               <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Neucha&family=DM+Sans&family=Joan&display=swap" rel="stylesheet" />
