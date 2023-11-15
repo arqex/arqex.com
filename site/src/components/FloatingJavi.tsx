@@ -32,8 +32,10 @@ export default function FloatingJavi(props: FloatingJaviProps) {
 
   React.useEffect( () => {
     if( isInitialBouncing ){
-      setTimeout( () => setInitialBouncing(false), 2000);
-      mounted = true;
+      setTimeout( () => {
+        setInitialBouncing(false);
+        mounted = true;
+      }, 2000);
     }
   }, [isInitialBouncing])
 
