@@ -23,7 +23,7 @@ function getAnimations( type: string ){
   if( type === 'init' ){
     return {
       initial: {opacity: 0, scale: .1, x: 0, y: -224},
-      animate: {opacity: 1, scale: 1, x: 20, y: -294, transition: {delay: 1.5}},
+      animate: {opacity: 1, scale: 1, x: 20, y: -294, transition: {delay: 2}},
       exit: {opacity:0, x: 20, y: -320, transition:{duration: .2}}
     }
   }
