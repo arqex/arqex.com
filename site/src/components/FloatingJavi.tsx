@@ -26,16 +26,15 @@ export default function FloatingJavi(props: FloatingJaviProps) {
 
   const [isInitialBouncing, setInitialBouncing] = React.useState(!mounted && position === 'middle');
   const animation = isInitialBouncing ? 
-    {y: [ middle, middle - 50, middle -50 , middle], transition: {duration: 1.2, delay: 500}} :
+    {y: [ middle, middle - 50, middle -50 , middle], transition: {duration: 1.2}} :
     controls;
-
 
   React.useEffect( () => {
     if( isInitialBouncing ){
       setTimeout( () => {
         setInitialBouncing(false);
         mounted = true;
-      }, 2000);
+      }, 1500);
     }
   }, [isInitialBouncing])
 
