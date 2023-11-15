@@ -104,7 +104,7 @@ export function Menu( props: MenuProps ){
           onDragEnd={ onDragEnd }
           onDragStart={ onDragStart }
           variants={{
-            closed: {y: '-102%'},
+            closed: {y: -2000},
             open: {y:-970}
           }}
           dragConstraints={{
