@@ -14,6 +14,7 @@ if( typeof window !== 'undefined' && window.location.hostname === 'arqex.com' ) 
   // @ts-ignore this way we can restore the console
   window.originalConsole = {...console.log};
   console.error = console.log = console.warn = () => {};
+  window.addEventListener('error', () => true);
 }
 
 interface ScreenWrapperProps {
