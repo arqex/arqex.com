@@ -31,7 +31,7 @@ export default function CvPage(props: PageProps<any>) {
                   imageURL={ JaviPic } />
                 <div className={styles.aboutContent}>
                   <p>
-                    I was born in Sevilla, Spain, about 40 years ago. I started travelling soon and I ended up living in different places around the world: London, Dublin, Milano, Guatemala City...
+                    I was born in Sevilla, Spain, about 40 years ago. I started traveling soon and I ended up living in different places around the world: London, Dublin, Milano, Guatemala City...
                   </p>
                   <p>
                     Lately I've settled down in Barcelona, where I live since 2013. I love the cosmopolitan way of living here. The sea, the mountains, the weather, the food, the friends and a great cultural offer that makes this city a place where I feel at home.

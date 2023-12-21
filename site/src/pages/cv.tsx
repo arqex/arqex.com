@@ -53,8 +53,8 @@ export default function CvPage(props: PageProps<any>) {
               <ul className={styles.cvList + ' ' + styles.cvWork}>
                 <li>
                   <div className={styles.date}>2015 - nowadays</div>
-                  <div className={styles.cvTitle}>Front-end lead developer at <a href="https://youcanbook.me/" target="_blank">YouCanBook.me</a></div>
-                  <div className={styles.cvDesc}>Designing and developing complete applications in React, coordinating with the UX and back-end teams.</div>
+                  <div className={styles.cvTitle}>Front-end lead at <a href="https://youcanbook.me/" target="_blank">YouCanBook.me</a></div>
+                  <div className={styles.cvDesc}>Designing and developing complete applications in React and APIs. Coordinating with the UX and back-end teams.</div>
                 </li>
                 <li>
                   <div className={styles.date}>2014 - 2015</div>
@@ -95,7 +95,7 @@ export default function CvPage(props: PageProps<any>) {
               <h3>Languages</h3>
               <ul className={styles.cvList}>
                 <li>
-                My mothertongue is <span className={styles.lang}>Spanish</span>
+                My mother tongue is <span className={styles.lang}>Spanish</span>
                 <span className={styles.flag}><Flag country="es" /></span>. I speak <span className={styles.lang}>English</span><span className={`${styles.flag} ${styles.en}`}><Flag country="en" /></span>
                 {" "}fluently and also <span className={styles.lang}>Italian</span><span className={styles.flag}><Flag country="it" /></span>, <span className={styles.lang}>French</span><span className={styles.flag}><Flag country="fr" /></span> and <span className={styles.lang}>Catalan</span><span className={styles.flag}><Flag country="ca" /></span> at a basic level.
                 </li>

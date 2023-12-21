@@ -53,7 +53,7 @@ export default function ArticleTemplate(props: PageProps<DataProps>) {
                     Published on {article.frontmatter.date.toLocaleLowerCase()} {renderSource(article.frontmatter.source)}
                   </div>
                   <div>
-                    {article.excerpt} ...
+                    {article.excerpt}
                   </div>
                 </article>
               ))}
